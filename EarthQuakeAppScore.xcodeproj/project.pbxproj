@@ -13,6 +13,9 @@
 		164B606521912A1200A03896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 164B606421912A1200A03896 /* Assets.xcassets */; };
 		164B606821912A1200A03896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 164B606621912A1200A03896 /* LaunchScreen.storyboard */; };
 		164B607321912A1200A03896 /* EarthQuakeAppScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164B607221912A1200A03896 /* EarthQuakeAppScoreTests.swift */; };
+		164B607F219130A400A03896 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164B607E219130A400A03896 /* Constants.swift */; };
+		7E9056EC9669DF28921ABC13 /* Pods_EarthQuakeAppScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347E43A229E13ED332C6523D /* Pods_EarthQuakeAppScore.framework */; };
+		CC2141276D08E8BE2E0114E7 /* Pods_EarthQuakeAppScoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C040050D306BE0CAD608B5C6 /* Pods_EarthQuakeAppScoreTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E3797F06444807A3DC81622 /* Pods-EarthQuakeAppScoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthQuakeAppScoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EarthQuakeAppScoreTests/Pods-EarthQuakeAppScoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		164B605A21912A1000A03896 /* EarthQuakeAppScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthQuakeAppScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		164B605D21912A1000A03896 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		164B605F21912A1000A03896 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,12 @@
 		164B606E21912A1200A03896 /* EarthQuakeAppScoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthQuakeAppScoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		164B607221912A1200A03896 /* EarthQuakeAppScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthQuakeAppScoreTests.swift; sourceTree = "<group>"; };
 		164B607421912A1200A03896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		164B607E219130A400A03896 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		347E43A229E13ED332C6523D /* Pods_EarthQuakeAppScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EarthQuakeAppScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34F67B90D697AA4A2E40E557 /* Pods-EarthQuakeAppScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthQuakeAppScore.release.xcconfig"; path = "Pods/Target Support Files/Pods-EarthQuakeAppScore/Pods-EarthQuakeAppScore.release.xcconfig"; sourceTree = "<group>"; };
+		3DABB9EC6B996594DA9598F4 /* Pods-EarthQuakeAppScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthQuakeAppScore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EarthQuakeAppScore/Pods-EarthQuakeAppScore.debug.xcconfig"; sourceTree = "<group>"; };
+		C040050D306BE0CAD608B5C6 /* Pods_EarthQuakeAppScoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EarthQuakeAppScoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA3E29616A40A0F4F87A818 /* Pods-EarthQuakeAppScoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthQuakeAppScoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EarthQuakeAppScoreTests/Pods-EarthQuakeAppScoreTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E9056EC9669DF28921ABC13 /* Pods_EarthQuakeAppScore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2141276D08E8BE2E0114E7 /* Pods_EarthQuakeAppScoreTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +74,8 @@
 				164B605C21912A1000A03896 /* EarthQuakeAppScore */,
 				164B607121912A1200A03896 /* EarthQuakeAppScoreTests */,
 				164B605B21912A1000A03896 /* Products */,
+				C1F743B77B4FF8BE43735540 /* Pods */,
+				AEF4FC0F21CAE9CABBD56A1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +91,14 @@
 		164B605C21912A1000A03896 /* EarthQuakeAppScore */ = {
 			isa = PBXGroup;
 			children = (
+				164B6084219130F900A03896 /* NetworkLayer */,
+				164B6083219130F200A03896 /* Models */,
+				164B6082219130DC00A03896 /* UserInterface */,
+				164B6081219130CE00A03896 /* View */,
+				164B6080219130BC00A03896 /* ViewModel */,
+				164B607D2191308D00A03896 /* Constants */,
 				164B605D21912A1000A03896 /* AppDelegate.swift */,
-				164B605F21912A1000A03896 /* ViewController.swift */,
-				164B606121912A1000A03896 /* Main.storyboard */,
 				164B606421912A1200A03896 /* Assets.xcassets */,
-				164B606621912A1200A03896 /* LaunchScreen.storyboard */,
 				164B606921912A1200A03896 /* Info.plist */,
 			);
 			path = EarthQuakeAppScore;
@@ -96,6 +113,72 @@
 			path = EarthQuakeAppScoreTests;
 			sourceTree = "<group>";
 		};
+		164B607D2191308D00A03896 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				164B607E219130A400A03896 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		164B6080219130BC00A03896 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		164B6081219130CE00A03896 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				164B605F21912A1000A03896 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		164B6082219130DC00A03896 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				164B606121912A1000A03896 /* Main.storyboard */,
+				164B606621912A1200A03896 /* LaunchScreen.storyboard */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		164B6083219130F200A03896 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		164B6084219130F900A03896 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		AEF4FC0F21CAE9CABBD56A1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				347E43A229E13ED332C6523D /* Pods_EarthQuakeAppScore.framework */,
+				C040050D306BE0CAD608B5C6 /* Pods_EarthQuakeAppScoreTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1F743B77B4FF8BE43735540 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DABB9EC6B996594DA9598F4 /* Pods-EarthQuakeAppScore.debug.xcconfig */,
+				34F67B90D697AA4A2E40E557 /* Pods-EarthQuakeAppScore.release.xcconfig */,
+				0E3797F06444807A3DC81622 /* Pods-EarthQuakeAppScoreTests.debug.xcconfig */,
+				DAA3E29616A40A0F4F87A818 /* Pods-EarthQuakeAppScoreTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 164B607721912A1200A03896 /* Build configuration list for PBXNativeTarget "EarthQuakeAppScore" */;
 			buildPhases = (
+				C2A9339AA7C515605BBA1FC2 /* [CP] Check Pods Manifest.lock */,
 				164B605621912A1000A03896 /* Sources */,
 				164B605721912A1000A03896 /* Frameworks */,
 				164B605821912A1000A03896 /* Resources */,
+				7379EA94D6D4A7DBF520939D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 164B607A21912A1200A03896 /* Build configuration list for PBXNativeTarget "EarthQuakeAppScoreTests" */;
 			buildPhases = (
+				EB4FEB3A94512F1689A2C915 /* [CP] Check Pods Manifest.lock */,
 				164B606A21912A1200A03896 /* Sources */,
 				164B606B21912A1200A03896 /* Frameworks */,
 				164B606C21912A1200A03896 /* Resources */,
@@ -192,6 +278,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7379EA94D6D4A7DBF520939D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EarthQuakeAppScore/Pods-EarthQuakeAppScore-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EarthQuakeAppScore/Pods-EarthQuakeAppScore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2A9339AA7C515605BBA1FC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EarthQuakeAppScore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB4FEB3A94512F1689A2C915 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EarthQuakeAppScoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		164B605621912A1000A03896 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -199,6 +342,7 @@
 			files = (
 				164B606021912A1000A03896 /* ViewController.swift in Sources */,
 				164B605E21912A1000A03896 /* AppDelegate.swift in Sources */,
+				164B607F219130A400A03896 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +500,7 @@
 		};
 		164B607821912A1200A03896 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DABB9EC6B996594DA9598F4 /* Pods-EarthQuakeAppScore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -373,6 +518,7 @@
 		};
 		164B607921912A1200A03896 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34F67B90D697AA4A2E40E557 /* Pods-EarthQuakeAppScore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -390,6 +536,7 @@
 		};
 		164B607B21912A1200A03896 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E3797F06444807A3DC81622 /* Pods-EarthQuakeAppScoreTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -410,6 +557,7 @@
 		};
 		164B607C21912A1200A03896 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAA3E29616A40A0F4F87A818 /* Pods-EarthQuakeAppScoreTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
