@@ -10,6 +10,7 @@ import Foundation
 
 struct Earthquake : Equatable
 {
+    let id: String
     let place: String
     let time: Date
     private let coordinate : [NSNumber]
@@ -31,6 +32,7 @@ struct Earthquake : Equatable
         let propertiesData = (jsonDict["properties"] as? [String: Any])!
         let geometryData = (jsonDict["geometry"] as? [String: Any])!
 
+        self.id = (jsonDict["id"] as? String)!
         self.place = (propertiesData["place"] as? String)!
         self.time = Date(timeIntervalSince1970: TimeInterval((propertiesData["time"] as? Int)!))
         self.magnitude = (propertiesData["mag"] as? NSNumber)!
@@ -38,8 +40,6 @@ struct Earthquake : Equatable
     }
     
     static func == (lhs: Earthquake, rhs: Earthquake) -> Bool {
-        return lhs.place == rhs.place &&
-            lhs.longitude == rhs.longitude &&
-            lhs.latitude == rhs.latitude
+        return lhs.id == rhs.id
     }
 }

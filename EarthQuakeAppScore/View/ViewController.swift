@@ -34,22 +34,31 @@ class ViewController: UIViewController, ViewModelStatusDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         refreshMap()
-        
         if let focusedEarthQuake = viewModel.selectedEarthQuake {
             centerMapOnLocation(selectedViewModel: focusedEarthQuake)
         }
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        if let focusedEarthQuake = viewModel.selectedEarthQuake {
+            focusArtwork()
+        }
+    }
+    
     func refreshMap() -> Void {
         mapView.removeAnnotations(mapView.annotations)
         mapView.addAnnotations({viewModel.earthQuakeModels.compactMap({MapArtwork(viewModel: $0)})}())
     }
     
-    let regionRadius: CLLocationDistance = 1000
+    let regionRadius: CLLocationDistance = 500
     func centerMapOnLocation(selectedViewModel: EarthQuakeViewModel) {
         let location = CLLocation(latitude:Double(truncating: selectedViewModel.latitude), longitude: Double(truncating: selectedViewModel.longitude))
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius, regionRadius)
-        mapView.setRegion(coordinateRegion, animated: true)
+        mapView.setRegion(coordinateRegion, animated: false)
+
+    }
+    
+    func focusArtwork() -> Void {
         do {
             try mapView.selectAnnotation(selectedArtwork(), animated: true)
         }
@@ -57,7 +66,7 @@ class ViewController: UIViewController, ViewModelStatusDelegate {
             print("Error In Selection Occured")
         }
         catch {
-             print("Unexpected error: \(error).")
+            print("Unexpected error: \(error).")
         }
     }
     
@@ -85,6 +94,7 @@ extension ViewController: MKMapViewDelegate {
             view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             view.canShowCallout = true
             view.calloutOffset = CGPoint(x: -5, y: 5)
+            view.rightCalloutAccessoryView = UIImageView.init()
         }
         return view
     }
